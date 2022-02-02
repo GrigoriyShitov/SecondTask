@@ -1,28 +1,89 @@
-.page-header{
-    position: absolute;
-    width: 1440px;
-    height: 70px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
-.about {
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size: inherit;
+    font-weight: inherit;
+}
+body,
+html {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #1f2041;
+}
+/* ********************************************************************* */
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+/* ****simple*container**************************************************************** */
+._container{
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+/* ****shapka***************************************************************** */
+.header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header_container{
     display: flex;
+    height: 104px;
+    align-items: center;
+}
+.header_logo{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: bold;
+    color: inherit;
+}
+.header_menu{
+    margin: 0px 0px 0px 530px;
+}
+.menu{
+    font-family: Montserrat;
+    line-height: 17px;
+    font-size: 14px;
+    padding: 5px;
+}
+.menu_list{
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 32px;
+    display: flex;
 }
-.container{
-    width: 1440px;
-    margin: auto;
+.menu_link_about{
+    font-weight: bold;
+    font-style: normal;
+    color: rgba(31, 32, 65, 0.75);
+    margin: 0px 20px 0px 0px;
 }
-.page-footer{
-    position: absolute;
-    width: 1440px;
-    height: 70px;
-    left: 0px;
-    bottom: 0px;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+.menu_link{
+    color: rgba(31, 32, 65, 0.5);
+    margin: 0px 20px 0px 0px;
 }
+.menu_link_prev_arrow{
+    color: rgba(31, 32, 65, 0.5);
+    margin: 0px 0px 0px 0px;
+}
+.menu_item{}
